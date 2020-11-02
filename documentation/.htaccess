@@ -1,0 +1,7 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^alothemes\.com$ [NC]
+RewriteRule ^(.*)$ http://docs\.alothemes\.com/m2/theme/$1 [R=301,L]
+RewriteCond %{HTTPS_HOST} ^alothemes\.com$ [NC]
+RewriteRule ^(.*)$ https://docs\.alothemes\.com/m2/theme/$1 [R=301,L]
